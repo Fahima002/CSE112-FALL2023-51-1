@@ -11,9 +11,10 @@ for (int j=1;j<=5;++j)
 cin>>x;
 if(x==1)
 {
-   cout<<abs(i-3)+abs(j-3)<<endl;
+   res=abs(i-3)+abs(j-3);
    }
   }
  }
+   cout<<res;
    return 0;
 }
