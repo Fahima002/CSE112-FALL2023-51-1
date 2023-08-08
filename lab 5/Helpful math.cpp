@@ -15,7 +15,7 @@ for(int i=0;i<str.size();i=i+2){
 }
 
  sort (arr,arr+siz);
-for(int i=0;i<siz;i++)
+for(int i=0;i<siz;i++){
   cout<<arr[i];
   if(i!=siz-1){
    cout<<'+';
