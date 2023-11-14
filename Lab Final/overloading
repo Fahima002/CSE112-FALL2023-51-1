@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+class ManchesterUnited
+{
+private:
+ int coach;
+ int player;
+public:
+ void getData(int c,int p)
+ {
+ coach =c;
+ player= p;
+ }
+ void increament()
+ {
+ coach++;
+ player++;
+ }
+ int display()
+ {
+ return coach+player;
+ }
+};
+int main()
+{
+ ManchesterUnited ronaldo,fernandes;
+ ronaldo.getData(5,7);
+ fernandes.getData(8,14);
+ cout<<"Before increament Ronaldo ";
+ if(ronaldo.display()>fernandes.display())
+ {
+ cout<<"Ronaldo is greater";
+ }
+ else if(ronaldo.display()<fernandes.display())
+ {
+ cout<<"Fernandes is greater";
+ }
+ else if(ronaldo.display()==fernandes.display())
+ {
+ cout<<"Both Are Equal";
+ }
+ ronaldo.increament();
+ cout<<endl;
+ cout<<"After incrementing Ronaldo ";
+ if(ronaldo.display()>fernandes.display())
+ {
+ cout<<"Ronaldo is greater";
+ }
+ else if(ronaldo.display()<fernandes.display())
+ {
+ cout<<"Fernandes is greater";
+ }
+ else if(ronaldo.display()==fernandes.display())
+ {
+ cout<<" Both Are Equal";
+ }
+ return 0;
+}
